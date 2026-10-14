@@ -1,39 +1,46 @@
-# TRƯƠNG QUANG DUY — FUTURE PORTFOLIO V3
+# TRƯƠNG QUANG DUY — TỆ NẠN LÒNG NGƯỜI (V2)
 
-Website giới thiệu cá nhân phong cách cinematic / futuristic, hoàn toàn HTML + CSS + JavaScript thuần. Sử dụng ảnh chân dung chính chủ đã cung cấp. Ảnh chỉ được nén và cắt từ bản gốc, không tạo gương mặt mới.
+Website cá nhân responsive dùng HTML/CSS/JavaScript, chạy miễn phí trên GitHub Pages. **Không cần SQL Server hoặc SSMS**.
 
-## Chạy thử
+## Điểm mới V2
 
-1. Giải nén ZIP.
-2. Mở đúng thư mục chứa `index.html`.
-3. Nhấp đúp `index.html` để mở trong Chrome/Edge.
-4. Nếu muốn chạy local server: `python -m http.server 8000` rồi mở http://localhost:8000.
+- Chỉnh hệ thống font tiếng Việt: dùng **Segoe UI / Tahoma / Arial** có hỗ trợ dấu, thống nhất tiêu đề/nội dung; tăng line-height để tránh cắt dấu. Không cần tải font ngoài.
+- Màn hình chào **“WELCOME TO TRƯƠNG QUANG DUY”** tự biến mất sau khoảng 2,85 giây hoặc nhấn **BỎ QUA** để vào ngay. Hiển thị khi trang được tải mới.
+- Ghi rõ tác giả **Trương Quang Duy** và thông điệp **“Quang Duy sẽ là người chữa lành cho bạn.”**
+- Thêm phần **Liên hệ / Hotline: 0797 964 842** với nút gọi trên điện thoại (`tel:+84797964842`). Đây là liên hệ cá nhân, không phải số cấp cứu.
+- Giữ nguyên 4 chương, 5 câu suy ngẫm, nút sao chép, chế độ sáng/tối, ghi chú riêng trong trình duyệt.
 
-## Tính năng
+## Thay website đang chạy trên GitHub
 
-- Intro **WELCOME TO TRƯƠNG QUANG DUY** lần đầu mở trong phiên trình duyệt, tự tắt hoặc bấm bỏ qua; ưu tiên giảm chuyển động.
-- Hero chân dung, hiệu ứng ánh sáng, bố cục máy tính/điện thoại.
-- Chế độ sáng/tối và lưu tùy chọn trong localStorage.
-- Modal xem ảnh lớn, menu mobile, hiệu ứng cuộn và thanh tiến độ đọc.
-- Kỹ năng, dự án, gọi hotline `0797964842`, sao chép số điện thoại.
-- Font Be Vietnam Pro hỗ trợ tiếng Việt, fallback font hệ thống.
-- Website tĩnh, không yêu cầu SQL Server hoặc hosting trả phí.
+Bạn đã có repo `https://github.com/tqd240624-create/quangduy` và bật GitHub Pages (`main` / `root`), vì vậy **không cần tạo repo khác hoặc bật Pages lại**.
 
-## Đưa lên Internet
+1. Giải nén ZIP mới. **Vào bên trong thư mục** `QuangDuy_Website_V2_ChuaLanh`.
+2. Mở repo `https://github.com/tqd240624-create/quangduy` → **Add file → Upload files**.
+3. Kéo thả **3 file ở cấp gốc**: `index.html`, `style.css`, `script.js`. GitHub sẽ đề nghị cập nhật các file trùng tên. Có thể thêm `README.md` nếu bạn muốn cập nhật hướng dẫn.
+4. **Không đổi tên, không xóa thư mục `assets` hiện có.** Hai ảnh SVG trong `assets` vẫn dùng như cũ.
+5. Chọn **Commit changes** (nhánh `main`). Chờ GitHub Pages triển khai lại và mở `https://tqd240624-create.github.io/quangduy/`.
+6. Nếu trình duyệt vẫn hiện bản cũ: nhấn `Ctrl + F5` hoặc mở tab ẩn danh để tải mới CSS/JS.
 
-### Cloudflare Pages miễn phí
-1. Tạo repository GitHub MỚI, ví dụ `truongquangduy-portfolio`, upload **toàn bộ file và thư mục `assets`** sao cho `index.html` nằm ngay thư mục gốc.
-2. Trong Cloudflare Dashboard: Workers & Pages → Pages → Import existing repository → chọn repository mới.
-3. Branch: `main`; Framework: `None`; Build output directory: `.`; Build command: để trống hoặc `exit 0` nếu bắt buộc.
-4. Sau deploy, website chạy tại `https://<ten-du-an>.pages.dev`.
+Trang web đang được lưu trên GitHub Pages không tự thay đổi khi bạn chỉnh file trong Visual Studio trên máy; cần upload/commit lên GitHub.
 
-### Tên miền `.id.vn`
-Nếu đã có tên miền `.id.vn`, trên Cloudflare Pages vào **Custom domains → Set up a domain**. Với tên miền gốc, có thể cần thêm domain vào Cloudflare và cập nhật nameserver ở nhà đăng ký; chỉ sao chép cặp nameserver do Cloudflare cấp. Không tự nhập DNS hoặc tên miền giả định. Kiểm tra HTTPS sau khi DNS hiệu lực. Tên miền `.id.vn` miễn phí hai năm đầu chỉ khi đủ điều kiện chương trình VNNIC; sau đó cần phí duy trì.
+## Kiểm tra tại máy
 
-## Sửa thông tin
-- `index.html`: câu giới thiệu, tên, nội dung, dự án, hotline và liên kết.
-- `style.css`: màu sắc, bố cục, hiệu ứng.
-- `script.js`: intro, nút bấm, menu, theme.
-- `assets/truong-quang-duy.webp`: ảnh gốc đã tối ưu, có thể thay bằng ảnh mới cùng tên.
+Mở `index.html` bằng Chrome/Edge. Nếu chỉnh sửa bằng Visual Studio: **File → Open → Folder**, chọn thư mục dự án. Website này là website tĩnh, không phải project ASP.NET Web Forms, vì vậy không cần chạy nút IIS Express.
 
-**Lưu ý:** Ảnh và số điện thoại đặt trên website công khai sẽ hiển thị cho mọi người. Không đưa số giấy tờ hoặc thông tin riêng tư lên GitHub.
+## Cấu trúc
+
+```text
+QuangDuy_Website_V2_ChuaLanh/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── .nojekyll
+└── assets/
+    ├── favicon.svg
+    └── mat-na.svg
+```
+
+## Lưu ý về dữ liệu
+
+Ghi chú cá nhân được lưu bằng `localStorage` trên trình duyệt người truy cập, **không gửi đến Quang Duy**. GitHub Pages chỉ dùng để xuất bản website tĩnh; repo Public có thể được xem bởi người khác. Không thêm mật khẩu hoặc thông tin nhạy cảm vào mã nguồn.
