@@ -12,3 +12,84 @@
 @media(max-width:800px){.container{width:calc(100% - 46px)}.section{padding-block:85px}.site-header{height:75px}.menu-button{display:grid}.main-nav{display:none;position:absolute;top:74px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:20px 23px 27px;gap:5px;box-shadow:var(--shadow)}.main-nav.is-open{display:flex}.main-nav a{padding:13px 10px;font-size:14px}.hero-layout{grid-template-columns:1fr;padding-top:60px;padding-bottom:64px;gap:45px}.hero-copy{padding:0}.hero-overline{margin-top:44px}.hero h1{font-size:clamp(61px,11vw,93px)}.hero-meta{margin-top:42px}.hero-art-wrap{max-width:510px;margin-inline:auto;width:100%}.hero-art-frame{min-height:490px}.hero-art{height:457px}.intro-grid{grid-template-columns:1fr;gap:30px}.intro-columns{gap:30px}.section-heading{align-items:start;flex-direction:column}.section-heading>p{max-width:540px}.manifesto-grid{grid-template-columns:1fr;gap:55px}.manifesto-image{height:470px;max-width:630px;width:100%}.manifesto-copy>p{max-width:600px}.quote-large{min-height:unset}.notebook-grid{grid-template-columns:1fr;gap:35px}.notebook-copy>p{max-width:650px}.local-notice{margin-top:25px}.footer-main{align-items:start;flex-wrap:wrap;gap:20px 35px}.footer-main p{margin-top:12px}.top-link{margin-left:0;align-self:center}.footer-bottom{flex-direction:column;gap:8px}}
 @media(max-width:540px){.container{width:calc(100% - 36px)}.section{padding-block:69px}.wordmark-label{gap:2px}.wordmark-label strong{font-size:10px}.wordmark-label small{font-size:7px}.mark{font-size:28px}.header-actions{gap:6px}.icon-button{width:38px;height:38px}.hero-layout{padding-top:47px;padding-bottom:47px;gap:35px}.eyebrow{font-size:9px;gap:8px}.eyebrow-line{width:18px}.hero-overline{margin:35px 0 12px}.hero h1{font-size:clamp(47px,11.2vw,66px);margin-bottom:25px}.hero-subtitle{font-size:14px}.hero-buttons{gap:9px}.button{padding:13px 16px;gap:12px;font-size:11px;min-height:49px}.hero-meta{gap:10px;justify-content:space-between;font-size:8px}.hero-art-frame{min-height:375px}.hero-art{height:354px}.art-orbit{width:270px;height:270px;top:60px}.orbit-two{width:340px;height:340px;top:23px}.art-side{font-size:8px}.art-foot{font-size:7px;padding:14px}.hero-bottom-inner{font-size:8px}.hero-bottom-inner>span:last-child{display:none}.display-title{font-size:clamp(39px,10vw,57px)}.intro-columns{grid-template-columns:1fr;gap:20px;font-size:14px}.intro-sign{margin-top:32px}.section-heading{margin-bottom:40px}.chapter-grid{grid-template-columns:1fr;gap:13px}.chapter-card>summary{min-height:250px;padding:22px}.chapter-icon{margin:20px 0}.chapter-name{font-size:30px}.chapter-detail{padding:20px 22px}.manifesto-image{height:390px}.manifesto-ring{width:240px;height:240px}.manifesto-ring::before{width:175px;height:175px}.manifesto-center{font-size:195px}.statement{gap:13px;margin-top:30px;padding-top:28px}.statement p{font-size:20px}.quote-section{padding-block:73px}.quote-large{margin:44px 0 55px;font-size:clamp(36px,9vw,52px)}.quote-footer{align-items:start;flex-direction:column;gap:22px}.quote-controls{width:100%}.round-button{width:44px;height:44px}.copy-button{margin-left:auto;font-size:9px;padding-inline:4px}.notebook-form{padding:22px}.field-meta{font-size:8px}.footer-main{flex-direction:column;padding-bottom:50px}.footer-brand{font-size:63px}.footer-main p{margin-top:0}.top-link{align-self:start;margin-top:10px}.footer-bottom{font-size:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+
+/* ================================================================
+   V2 — Trương Quang Duy | Vietnamese typography & healing identity
+   System fonts only: no webfont downloads or missing Vietnamese glyphs.
+   ================================================================ */
+:root{--ui-font:"Segoe UI",Tahoma,Arial,sans-serif}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:var(--ui-font);font-synthesis:none;text-rendering:optimizeLegibility}
+button,input,textarea{font-family:var(--ui-font)}
+.display-title,.hero h1,.quote-large,.footer-brand,.manifesto-center,.mark,.statement p,.chapter-name,.welcome-title,.welcome-monogram,.contact-number{font-family:var(--ui-font)!important;font-synthesis:none;letter-spacing:-.035em}
+.display-title{line-height:1.23;letter-spacing:-.035em}
+.hero h1{line-height:1.19;letter-spacing:-.042em}
+.quote-large{line-height:1.24;letter-spacing:-.032em}
+.hero h1 i,.display-title em,.footer-brand em,.contact-copy em{font-style:normal;font-weight:600}
+.chapter-name{line-height:1.25}
+.statement p{line-height:1.4}
+.main-nav{gap:clamp(14px,2.2vw,30px)}
+.hero-overline{font-size:11px;letter-spacing:.13em;line-height:1.8;font-weight:700}
+.hero-healing{margin:34px 0 24px;max-width:580px;padding:16px 20px;border-left:2px solid var(--gold);background:rgba(216,172,117,.055);color:var(--gold);font-size:clamp(14px,1.3vw,17px);line-height:1.65;font-weight:650}
+.hero-healing span{color:var(--muted);font-size:12px;font-weight:400;display:block;margin-top:5px}
+.intro-sign{line-height:1.5}
+.wordmark-label small{letter-spacing:.08em}
+.contact-section{background:radial-gradient(circle at 16% 13%,rgba(217,174,120,.10),transparent 41%),var(--bg2);border-top:1px solid var(--line)}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);align-items:center;gap:clamp(42px,7vw,112px)}
+.contact-copy{max-width:690px}
+.contact-greeting{font-size:13px;color:var(--gold);letter-spacing:.06em;margin-bottom:24px;font-weight:700}
+.contact-copy .display-title{font-size:clamp(40px,4.9vw,75px);margin-bottom:26px}
+.contact-copy>p:not(.contact-greeting):not(.contact-promise){color:var(--muted);max-width:530px;line-height:1.85;font-size:15px}
+.contact-promise{margin:30px 0 30px;padding-left:19px;border-left:2px solid var(--gold);color:var(--ink);font-size:clamp(18px,2vw,25px);font-weight:650;line-height:1.6}
+.contact-author{display:flex;align-items:center;gap:13px}
+.contact-avatar{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-size:15px;font-weight:800;letter-spacing:-.06em}
+.contact-author>span:last-child{display:flex;flex-direction:column;gap:3px}
+.contact-author strong{font-size:14px;letter-spacing:.02em}
+.contact-author small{font-size:12px;color:var(--muted)}
+.contact-card{border:1px solid var(--line);background:var(--panel);padding:clamp(25px,3vw,42px);min-width:0;box-shadow:var(--shadow)}
+.contact-card-top{display:flex;justify-content:space-between;align-items:center;letter-spacing:.15em;font-size:11px;font-weight:800;color:var(--gold);padding-bottom:25px;border-bottom:1px solid var(--line)}
+.contact-dot{background:#8cba91;width:8px;height:8px;border-radius:50%;box-shadow:0 0 0 5px rgba(140,186,145,.1)}
+.contact-card-body{padding:43px 0 34px}
+.contact-label{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.12em}
+.contact-number{display:block;font-size:clamp(29px,3.3vw,53px);white-space:nowrap;font-weight:750;line-height:1.3;letter-spacing:-.055em;color:var(--ink);margin:10px 0 15px;font-variant-numeric:tabular-nums}
+.contact-number:hover{color:var(--gold)}
+.contact-card-body p{font-size:13px;line-height:1.7;color:var(--muted);margin-bottom:0}
+.contact-button{display:flex;justify-content:space-between;align-items:center;gap:18px;background:var(--gold);padding:18px 19px;color:#171813;font-weight:800;font-size:12px;letter-spacing:.12em;min-height:55px;transition:background .2s,transform .2s}
+.contact-button:hover{background:#f3d3a3;transform:translateY(-2px)}
+.contact-footnote{font-size:11px;color:var(--muted);line-height:1.65;margin:23px 0 0}
+.footer-main p strong{color:var(--ink);font-weight:750}
+.footer-main p{line-height:1.7}
+/* Welcome splash: text rendered with system Vietnamese Unicode font. */
+.welcome-screen{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;padding:30px 18px;background:#0e1110;color:#f9f1e7;overflow:hidden;isolation:isolate;transition:opacity .55s ease,visibility .55s ease;animation:welcome-failsafe 0s linear 6s forwards}
+.welcome-screen.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+.welcome-glow{position:absolute;z-index:-1;inset:-40%;background:radial-gradient(circle,rgba(204,160,105,.15),transparent 48%);animation:welcome-glow 3s ease-in-out infinite alternate}
+.welcome-inner{text-align:center;position:relative;z-index:1;width:min(100%,990px);animation:welcome-reveal 1s cubic-bezier(.2,.75,.15,1) both}
+.welcome-monogram{display:flex;justify-content:center;align-items:baseline;margin-bottom:42px;font-size:clamp(45px,6vw,82px);font-weight:800;letter-spacing:-.13em;line-height:1}
+.welcome-monogram span:nth-child(2),.welcome-monogram b{color:#e5bf90}
+.welcome-monogram b{font-size:.9em;letter-spacing:0}
+.welcome-eyebrow{font-size:clamp(10px,1.1vw,12px);font-weight:800;letter-spacing:.24em;color:#d9bb95}
+.welcome-title{margin:22px 0 20px;line-height:1.21;letter-spacing:-.04em}
+.welcome-title span{font-size:clamp(18px,2.4vw,30px);font-weight:400;display:block;letter-spacing:.27em;margin-bottom:10px;color:#a9a6a0}
+.welcome-title strong{font-size:clamp(37px,7.2vw,104px);font-weight:850;display:block;overflow-wrap:anywhere}
+.welcome-caption{line-height:1.85;color:#cbc6bb;font-size:clamp(13px,1.4vw,16px);margin:0 auto;max-width:550px}
+.welcome-loader{width:min(280px,68vw);margin:38px auto 0;background:rgba(255,255,255,.18);height:2px;overflow:hidden}
+.welcome-loader span{display:block;width:100%;height:100%;background:#e4be8b;transform-origin:left;animation:welcome-progress 2.7s linear both}
+.welcome-skip{position:absolute;right:clamp(18px,3vw,48px);bottom:clamp(20px,3vw,42px);border:1px solid rgba(230,220,206,.35);background:rgba(255,255,255,.06);color:#f8f4eb;padding:12px 17px;font-size:11px;font-weight:800;letter-spacing:.12em;transition:background .2s}
+.welcome-skip:hover,.welcome-skip:focus-visible{background:rgba(255,255,255,.16)}
+@keyframes welcome-reveal{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes welcome-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes welcome-glow{to{transform:scale(1.15)}}
+@keyframes welcome-failsafe{to{opacity:0;visibility:hidden;pointer-events:none}}
+@media(max-width:1000px){.main-nav{gap:14px}.contact-layout{gap:36px}.contact-number{font-size:clamp(27px,3.2vw,39px)}}
+@media(max-width:780px){.contact-layout{grid-template-columns:1fr}.contact-copy{max-width:680px}.contact-card{max-width:680px;width:100%}.main-nav{gap:20px}.welcome-title strong{font-size:clamp(36px,9vw,66px)}}
+@media(max-width:540px){.hero-overline{font-size:9px;letter-spacing:.06em}.hero h1{font-size:clamp(43px,10vw,62px);line-height:1.25}.display-title{font-size:clamp(35px,9vw,50px);line-height:1.25}.hero-healing{margin-top:26px;font-size:14px;padding:14px}.hero-healing span{font-size:11px}.contact-card{padding:23px}.contact-card-body{padding:28px 0}.contact-number{font-size:clamp(28px,7.6vw,39px)}.contact-copy .display-title{font-size:clamp(34px,8.8vw,50px)}.welcome-title span{letter-spacing:.16em;font-size:16px}.welcome-title strong{font-size:clamp(34px,9.4vw,54px)}.welcome-monogram{margin-bottom:33px}.welcome-caption br{display:none}.welcome-caption{max-width:290px}.welcome-loader{margin-top:29px}}
+@media(prefers-reduced-motion:reduce){.welcome-screen,.welcome-glow,.welcome-inner,.welcome-loader span{animation:none!important;transition:none!important}}
+
+/* Final typography tuning: keep Vietnamese uppercase accents clear. */
+.welcome-inner{width:min(100%,1160px)}
+.welcome-title{letter-spacing:0;line-height:1.28}
+.welcome-title strong{font-size:clamp(36px,5.2vw,77px);font-weight:800;letter-spacing:0.005em;line-height:1.28}
+.welcome-title span{line-height:1.4}
+.hero h1,.display-title,.quote-large{letter-spacing:-.015em}
+@media(max-width:540px){.welcome-title strong{font-size:clamp(32px,9vw,46px);letter-spacing:0;line-height:1.28}}

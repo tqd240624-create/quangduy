@@ -1,62 +1,46 @@
-# QUANG DUY — TỆ NẠN LÒNG NGƯỜI
+# TRƯƠNG QUANG DUY — TỆ NẠN LÒNG NGƯỜI (V2)
 
-Website cá nhân bằng **HTML + CSS + JavaScript thuần**, giao diện responsive, không cần database hay server để chạy.
+Website cá nhân responsive dùng HTML/CSS/JavaScript, chạy miễn phí trên GitHub Pages. **Không cần SQL Server hoặc SSMS**.
 
-## 1. Xem website trên máy
+## Điểm mới V2
 
-- Giải nén ZIP.
-- Mở file `index.html` bằng Chrome/Edge.
-- Để chỉnh sửa trong **Visual Studio**: chọn `File → Open → Folder`, chọn thư mục `QuangDuy_TeNanLongNguoi`, rồi sửa `index.html`, `style.css`, `script.js`.
-- Đây là **website tĩnh độc lập**, không phải project ASP.NET Web Forms và không phải file `.sln` / `.csproj`. Đừng chép đè trực tiếp lên project `QuanLy` đang có nếu muốn giữ project đó.
+- Chỉnh hệ thống font tiếng Việt: dùng **Segoe UI / Tahoma / Arial** có hỗ trợ dấu, thống nhất tiêu đề/nội dung; tăng line-height để tránh cắt dấu. Không cần tải font ngoài.
+- Màn hình chào **“WELCOME TO TRƯƠNG QUANG DUY”** tự biến mất sau khoảng 2,85 giây hoặc nhấn **BỎ QUA** để vào ngay. Hiển thị khi trang được tải mới.
+- Ghi rõ tác giả **Trương Quang Duy** và thông điệp **“Quang Duy sẽ là người chữa lành cho bạn.”**
+- Thêm phần **Liên hệ / Hotline: 0797 964 842** với nút gọi trên điện thoại (`tel:+84797964842`). Đây là liên hệ cá nhân, không phải số cấp cứu.
+- Giữ nguyên 4 chương, 5 câu suy ngẫm, nút sao chép, chế độ sáng/tối, ghi chú riêng trong trình duyệt.
 
-## 2. Đưa lên Internet MIỄN PHÍ với GitHub Pages
+## Thay website đang chạy trên GitHub
 
-1. Đăng nhập https://github.com/ và tạo repository mới, ví dụ `quang-duy` (**Public** nếu dùng gói GitHub Free).
-2. Trong repository bấm **Add file → Upload files**. Kéo thả **nội dung bên trong thư mục đã giải nén** lên GitHub: `index.html`, `style.css`, `script.js`, thư mục `assets` và `.nojekyll` (file ẩn không bắt buộc). Đảm bảo `index.html` nằm ở gốc repository, KHÔNG nằm trong thư mục con.
-3. Bấm **Commit changes**.
-4. Chọn **Settings → Pages**.
-5. Ở **Build and deployment → Source**, chọn **Deploy from a branch**.
-6. Chọn branch `main`, folder `/(root)`, rồi **Save**.
-7. Chờ GitHub xử lý xuất bản và vào đường dẫn hiển thị trong trang Pages, thường có dạng `https://TEN-TAI-KHOAN.github.io/quang-duy/`.
+Bạn đã có repo `https://github.com/tqd240624-create/quangduy` và bật GitHub Pages (`main` / `root`), vì vậy **không cần tạo repo khác hoặc bật Pages lại**.
 
-Tài liệu chính thức: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+1. Giải nén ZIP mới. **Vào bên trong thư mục** `QuangDuy_Website_V2_ChuaLanh`.
+2. Mở repo `https://github.com/tqd240624-create/quangduy` → **Add file → Upload files**.
+3. Kéo thả **3 file ở cấp gốc**: `index.html`, `style.css`, `script.js`. GitHub sẽ đề nghị cập nhật các file trùng tên. Có thể thêm `README.md` nếu bạn muốn cập nhật hướng dẫn.
+4. **Không đổi tên, không xóa thư mục `assets` hiện có.** Hai ảnh SVG trong `assets` vẫn dùng như cũ.
+5. Chọn **Commit changes** (nhánh `main`). Chờ GitHub Pages triển khai lại và mở `https://tqd240624-create.github.io/quangduy/`.
+6. Nếu trình duyệt vẫn hiện bản cũ: nhấn `Ctrl + F5` hoặc mở tab ẩn danh để tải mới CSS/JS.
 
-**Quan trọng:** Mình chỉ tạo website và đóng gói nguồn. Website CHƯA được xuất bản lên Internet cho đến khi chính bạn đăng nó lên hosting.
+Trang web đang được lưu trên GitHub Pages không tự thay đổi khi bạn chỉnh file trong Visual Studio trên máy; cần upload/commit lên GitHub.
 
-## 3. Chức năng có sẵn
+## Kiểm tra tại máy
 
-- Giao diện đọc bài với 4 chương: Giả tạo, Vô cảm, Lòng tham, Đố kỵ.
-- Mỗi chương mở/đóng để đọc nội dung.
-- Đổi giao diện sáng/tối, có nhớ lựa chọn ở trình duyệt.
-- 5 câu suy ngẫm có nút chuyển câu, sao chép.
-- Ghi chú cá nhân lưu **chỉ trên trình duyệt đang sử dụng** bằng `localStorage`.
-- Menu cho điện thoại, thanh tiến độ đọc trang, hỗ trợ bàn phím và giảm chuyển động.
+Mở `index.html` bằng Chrome/Edge. Nếu chỉnh sửa bằng Visual Studio: **File → Open → Folder**, chọn thư mục dự án. Website này là website tĩnh, không phải project ASP.NET Web Forms, vì vậy không cần chạy nút IIS Express.
 
-## 4. Giới hạn và bảo mật
+## Cấu trúc
 
-- Không cần SQL Server/SSMS. Không có tài khoản, đăng nhập hay cơ sở dữ liệu nhiều người dùng.
-- Ghi chú không được gửi cho tác giả hoặc lưu lên Internet; xóa dữ liệu trình duyệt có thể làm mất ghi chú.
-- **Đừng đăng mật khẩu, thông tin cá nhân, thông tin công ty, dữ liệu bệnh nhân hoặc tài liệu nội bộ lên repository Public.**
-- GitHub Pages dành cho website tĩnh; không chạy mã ASP.NET/C# và không chạy Microsoft SQL Server trực tiếp.
-
-## 5. Cấu trúc
-
-```
-QuangDuy_TeNanLongNguoi/
-├── index.html            Giao diện và nội dung
-├── style.css             Phong cách + giao diện mobile
-├── script.js             Các tính năng tương tác
-├── assets/
-│   ├── favicon.svg       Biểu tượng website
-│   └── mat-na.svg        Minh họa chủ đề
-├── .nojekyll             Dùng với GitHub Pages
-└── README.md             Hướng dẫn
+```text
+QuangDuy_Website_V2_ChuaLanh/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── .nojekyll
+└── assets/
+    ├── favicon.svg
+    └── mat-na.svg
 ```
 
-### Chỉnh nội dung
+## Lưu ý về dữ liệu
 
-- Đổi tên/tựa: trong `index.html`, tìm `QUANG DUY` hoặc `TỆ NẠN`.
-- Đổi màu: trong `style.css`, tìm `--gold`, `--bg`, `--ink`.
-- Đổi câu suy ngẫm: trong `script.js`, tìm `quotations`.
-
-Made for QUANG DUY, 2026.
+Ghi chú cá nhân được lưu bằng `localStorage` trên trình duyệt người truy cập, **không gửi đến Quang Duy**. GitHub Pages chỉ dùng để xuất bản website tĩnh; repo Public có thể được xem bởi người khác. Không thêm mật khẩu hoặc thông tin nhạy cảm vào mã nguồn.

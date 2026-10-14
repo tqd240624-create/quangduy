@@ -7,6 +7,26 @@
   const safeSet = (key, value) => { try { localStorage.setItem(key, value); return true; } catch { return false; } };
   const safeRemove = (key) => { try { localStorage.removeItem(key); return true; } catch { return false; } };
 
+  // Welcome screen: first impression on every page visit, keyboard accessible.
+  const welcomeScreen = $('#welcomeScreen');
+  const welcomeSkip = $('#welcomeSkip');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let welcomeDone = false;
+  let welcomeTimer;
+  function closeWelcome() {
+    if (welcomeDone) return;
+    welcomeDone = true;
+    clearTimeout(welcomeTimer);
+    welcomeScreen.classList.add('is-leaving');
+    welcomeScreen.setAttribute('aria-hidden', 'true');
+    welcomeScreen.removeAttribute('aria-modal');
+    welcomeScreen.removeAttribute('role');
+    welcomeSkip.setAttribute('tabindex', '-1');
+    if (document.activeElement === welcomeSkip) $('#mainNav a').focus();
+  }
+  welcomeSkip.addEventListener('click', closeWelcome);
+  welcomeTimer = setTimeout(closeWelcome, prefersReducedMotion ? 350 : 2850);
+
   const themeToggle = $('#themeToggle');
   const savedTheme = safeGet('quangduy-theme');
   if (savedTheme === 'light') root.dataset.theme = 'light';

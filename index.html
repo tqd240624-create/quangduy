@@ -4,30 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111211">
-  <meta name="description" content="Quang Duy — Tệ nạn lòng người. Những lát cắt về sự giả tạo, vô cảm, lòng tham và đố kỵ, để hiểu người và nhìn lại chính mình.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Trương Quang Duy — Tệ nạn lòng người. Một góc suy ngẫm về những mặt tối của con người, nơi bạn được lắng nghe và tìm lại sự bình yên.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Quang Duy | Tệ nạn lòng người">
+  <meta property="og:title" content="Trương Quang Duy | Tệ nạn lòng người">
   <meta property="og:description" content="Không phải vết thương nào cũng hiện trên da. Một góc nhìn về những mặt tối và ánh sáng trong lòng người.">
   <meta property="og:locale" content="vi_VN">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>Quang Duy — Tệ nạn lòng người</title>
+  <title>Trương Quang Duy — Tệ nạn lòng người</title>
 </head>
 <body>
   <a class="skip-link" href="#noi-dung">Chuyển đến nội dung</a>
+  <!-- Màn hình chào. Có nút bỏ qua, tự đóng sau vài giây. -->
+  <div class="welcome-screen" id="welcomeScreen" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="welcome-glow" aria-hidden="true"></div>
+    <div class="welcome-inner">
+      <div class="welcome-monogram" aria-hidden="true"><span>Q</span><span>D</span><b>.</b></div>
+      <span class="welcome-eyebrow">MỘT KHÔNG GIAN DÀNH CHO BẠN</span>
+      <h2 class="welcome-title" id="welcomeTitle"><span>WELCOME TO</span><strong>TRƯƠNG QUANG DUY</strong></h2>
+      <p class="welcome-caption">Nơi những tổn thương được lắng nghe,<br>và sự tử tế vẫn luôn có chỗ đứng.</p>
+      <div class="welcome-loader" aria-hidden="true"><span></span></div>
+    </div>
+    <button class="welcome-skip" id="welcomeSkip" type="button">BỎ QUA <span aria-hidden="true">↗</span></button>
+  </div>
+  <noscript><style>.welcome-screen{display:none!important}</style></noscript>
   <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
   <header class="site-header" id="dau-trang">
     <div class="container header-inner">
       <a href="#dau-trang" class="wordmark" aria-label="Quang Duy - Về đầu trang">
         <span class="mark" aria-hidden="true">Q<span>D</span><b>.</b></span>
-        <span class="wordmark-label"><strong>QUANG DUY</strong><small>GÓC NHÌN CỦA TÔI</small></span>
+        <span class="wordmark-label"><strong>QUANG DUY</strong><small>TRƯƠNG QUANG DUY</small></span>
       </a>
       <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
         <a href="#gioi-thieu">Khởi đầu</a>
         <a href="#goc-khuat">Góc khuất</a>
         <a href="#suy-ngam">Suy ngẫm</a>
         <a href="#loi-nhan">Lời nhắn</a>
+        <a href="#lien-he">Liên hệ</a>
       </nav>
       <div class="header-actions">
         <button id="themeToggle" class="icon-button" type="button" aria-label="Chuyển giao diện sáng/tối" title="Đổi giao diện">
@@ -46,14 +61,15 @@
       <div class="container hero-layout">
         <div class="hero-copy">
           <div class="eyebrow"><span class="eyebrow-line"></span> MỘT DỰ ÁN CÁ NHÂN <span class="eyebrow-dot">•</span> 2026</div>
-          <p class="hero-overline">Có những thứ khó nhìn thấy bằng mắt...</p>
+          <p class="hero-overline">TRƯƠNG QUANG DUY <span aria-hidden="true">✦</span> NƠI CHỮA LÀNH BẮT ĐẦU TỪ SỰ LẮNG NGHE</p>
           <h1 id="hero-title"><span>TỆ NẠN</span><span class="title-em">LÒNG <i>NGƯỜI.</i></span></h1>
           <p class="hero-subtitle">Không phải vết thương nào cũng hiện trên da. Có những tổn thương bắt đầu từ một lời nói, một sự im lặng, hay một chiếc mặt nạ rất giống lòng tốt.</p>
           <div class="hero-buttons">
             <a class="button button-primary" href="#goc-khuat">Khám phá góc khuất <span aria-hidden="true">↗</span></a>
             <a class="button button-outline" href="#gioi-thieu">Đọc lời mở đầu <span aria-hidden="true">↓</span></a>
           </div>
-          <div class="hero-meta"><span>01 — 04 / NHỮNG LÁT CẮT</span><span>VIẾT BỞI QUANG DUY</span></div>
+          <p class="hero-healing">“Quang Duy sẽ là người chữa lành cho bạn.” <span>— Một lời nhắn gửi đến những tâm hồn cần được lắng nghe.</span></p>
+          <div class="hero-meta"><span>01 — 04 / NHỮNG LÁT CẮT</span><span>VIẾT BỞI TRƯƠNG QUANG DUY</span></div>
         </div>
         <div class="hero-art-wrap" aria-hidden="true">
           <div class="hero-art-frame">
@@ -79,7 +95,7 @@
             <p>Có người nói điều hay nhưng làm điều ngược lại. Có người im lặng trước nỗi đau của người khác. Có người đánh đổi sự tử tế để lấy một chút lợi ích cho riêng mình.</p>
             <p>Trang web này không được tạo ra để kết tội bất kỳ ai. Nó chỉ là một nơi để nhìn thẳng vào những điều đôi khi ta cố tình bỏ qua — và tự hỏi: <strong>liệu mình đã từng như thế?</strong></p>
           </div>
-          <div class="intro-sign"><span class="signature-line"></span><span>QUANG DUY <small>— NGƯỜI VIẾT</small></span></div>
+          <div class="intro-sign"><span class="signature-line"></span><span>TRƯƠNG QUANG DUY <small>— NGƯỜI VIẾT</small></span></div>
         </div>
       </div>
     </section>
@@ -120,13 +136,31 @@
     </section>
 
     <section class="quote-section section" aria-labelledby="quote-title">
-      <div class="container quote-layout"><div class="quote-top"><span class="kicker">03 / TỪ NHỮNG ĐIỀU NHỎ</span><span class="quote-counter" id="quoteCounter" aria-live="polite">01 / 05</span></div><h2 id="quote-title" class="quote-large">“<span id="quoteText">Đừng để cách người khác đối xử với bạn quyết định con người mà bạn sẽ trở thành.</span>”</h2><div class="quote-footer"><span>— NHỮNG DÒNG SUY NGẪM, QUANG DUY</span><div class="quote-controls"><button type="button" class="round-button" id="prevQuote" aria-label="Câu trước">←</button><button type="button" class="round-button" id="nextQuote" aria-label="Câu tiếp theo">→</button><button type="button" class="copy-button" id="copyQuote">SAO CHÉP CÂU NÀY <span aria-hidden="true">↗</span></button></div></div></div>
+      <div class="container quote-layout"><div class="quote-top"><span class="kicker">03 / TỪ NHỮNG ĐIỀU NHỎ</span><span class="quote-counter" id="quoteCounter" aria-live="polite">01 / 05</span></div><h2 id="quote-title" class="quote-large">“<span id="quoteText">Đừng để cách người khác đối xử với bạn quyết định con người mà bạn sẽ trở thành.</span>”</h2><div class="quote-footer"><span>— NHỮNG DÒNG SUY NGẪM, TRƯƠNG QUANG DUY</span><div class="quote-controls"><button type="button" class="round-button" id="prevQuote" aria-label="Câu trước">←</button><button type="button" class="round-button" id="nextQuote" aria-label="Câu tiếp theo">→</button><button type="button" class="copy-button" id="copyQuote">SAO CHÉP CÂU NÀY <span aria-hidden="true">↗</span></button></div></div></div>
     </section>
 
     <section class="notebook section" id="loi-nhan" aria-labelledby="notebook-title"><div class="container notebook-grid"><div class="notebook-copy"><span class="kicker">04 / DÀNH CHO BẠN</span><h2 id="notebook-title" class="display-title">Một dòng<br><em>cho chính mình.</em></h2><p>Nếu có một điều bạn muốn nhắc bản thân sau khi đọc trang này, hãy viết nó xuống. Không ai chấm điểm những suy nghĩ của bạn.</p><div class="local-notice"><span class="notice-dot" aria-hidden="true"></span><span>Ghi chú chỉ lưu trong trình duyệt trên thiết bị này, không gửi lên máy chủ và không hiển thị cho người khác.</span></div></div><div class="notebook-form"><label for="journal">ĐIỀU TÔI MUỐN NHỚ...</label><textarea id="journal" maxlength="1000" rows="7" placeholder="Hôm nay, tôi nhận ra rằng..." aria-describedby="journalHelp"></textarea><div class="field-meta"><span id="journalHelp">Góc ghi chú riêng tư trên thiết bị</span><span id="charCount">0 / 1000</span></div><div class="journal-actions"><button type="button" id="saveJournal" class="button button-primary">Lưu ghi chú <span aria-hidden="true">↗</span></button><button type="button" id="clearJournal" class="button button-text">Xóa ghi chú</button></div><p id="journalStatus" class="journal-status" role="status" aria-live="polite"></p></div></div></section>
+    <section class="contact-section section" id="lien-he" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <span class="kicker">05 / KHI BẠN CẦN ĐƯỢC LẮNG NGHE</span>
+          <p class="contact-greeting">Một góc bình yên, dành riêng cho bạn.</p>
+          <h2 class="display-title" id="contact-title">Bạn không cần<br><em>mạnh mẽ một mình.</em></h2>
+          <p>Giữa những điều không dễ nói thành lời, hy vọng nơi đây giúp bạn cảm thấy mình được thấu hiểu. Nếu bạn muốn trò chuyện, có thể liên hệ với mình.</p>
+          <p class="contact-promise">“Quang Duy sẽ là người chữa lành cho bạn.”</p>
+          <div class="contact-author"><span class="contact-avatar" aria-hidden="true">QD</span><span><strong>Trương Quang Duy</strong><small>Người viết &amp; người lắng nghe</small></span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-top"><span>LIÊN HỆ TRỰC TIẾP</span><span class="contact-dot" aria-hidden="true"></span></div>
+          <div class="contact-card-body"><span class="contact-label">HOTLINE / ĐIỆN THOẠI</span><a class="contact-number" href="tel:+84797964842" aria-label="Gọi 0797 964 842">0797 964 842</a><p>Bấm vào số điện thoại để mở ứng dụng gọi trên thiết bị của bạn.</p></div>
+          <a class="contact-button" href="tel:+84797964842">GỌI CHO QUANG DUY <span aria-hidden="true">↗</span></a>
+          <p class="contact-footnote">Đây là số liên hệ cá nhân, không phải đường dây cấp cứu hay dịch vụ tư vấn tâm lý chuyên nghiệp.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><div class="footer-main"><a class="footer-brand" href="#dau-trang">QUANG <em>DUY.</em></a><p>Viết để hiểu người.<br>Sống để hiểu mình.</p><a href="#dau-trang" class="top-link">LÊN ĐẦU TRANG ↑</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> QUANG DUY. MỘT DỰ ÁN CÁ NHÂN.</span><span>NỘI DUNG MANG TÍNH SUY NGẪM, KHÔNG NHẰM CÔNG KÍCH BẤT KỲ AI.</span></div></div></footer>
+  <footer class="site-footer"><div class="container"><div class="footer-main"><a class="footer-brand" href="#dau-trang">QUANG <em>DUY.</em></a><p><strong>Trương Quang Duy</strong><br>Viết để hiểu người. Lắng nghe để chữa lành.</p><a href="#dau-trang" class="top-link">LÊN ĐẦU TRANG ↑</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> TRƯƠNG QUANG DUY. MỘT DỰ ÁN CÁ NHÂN.</span><span>NỘI DUNG MANG TÍNH SUY NGẪM, KHÔNG NHẰM CÔNG KÍCH BẤT KỲ AI.</span></div></div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
