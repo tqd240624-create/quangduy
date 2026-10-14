@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 790" fill="none" role="img" aria-labelledby="t"><title id="t">Chiếc mặt nạ vỡ, biểu tượng của vẻ ngoài và nội tâm con người</title>
+<defs><linearGradient id="a" x1="190" x2="500" y1="70" y2="738" gradientUnits="userSpaceOnUse"><stop stop-color="#F4D5A7"/><stop offset=".46" stop-color="#9A7853"/><stop offset="1" stop-color="#3C3228"/></linearGradient><linearGradient id="b" x1="180" x2="515" y1="120" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#EAD1AE"/><stop offset="1" stop-color="#806448"/></linearGradient><linearGradient id="c" x1="384" x2="510" y1="195" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#262722"/><stop offset="1" stop-color="#141613"/></linearGradient></defs>
+<circle cx="310" cy="353" r="240" stroke="#D3B58B" opacity=".15" stroke-width="1"/><circle cx="310" cy="353" r="193" stroke="#D3B58B" opacity=".12"/><path d="M128 254C137 149 208 89 306 74c119-18 202 71 211 178l-5 151c-2 86-65 173-122 222l-55 48c-14 12-35 12-49 0l-55-48c-64-57-121-139-121-224z" fill="url(#a)" opacity=".9"/>
+<path d="M310 75v609l25-11 55-48c57-49 120-136 122-222l5-151c-9-107-92-196-207-177Z" fill="url(#c)" opacity=".86"/>
+<path d="M310 76 248 179l64 109-40 113 38 131-61 92" stroke="#11130F" stroke-width="4" stroke-linejoin="round"/>
+<path d="M309 95 383 211l-38 111 58 92-90 120 77 84M310 288l99 32 91-57M310 532l99-29 85-97M240 180l-88 91 82 88-95 54M272 401l-79 49-35 78M249 624l-70-63" stroke="#D9BD94" opacity=".65" stroke-width="2"/>
+<path d="M180 316c38-22 74-16 101 12-28 20-68 24-101-12Z" fill="#1E211D"/><path d="M344 328c29-27 71-34 110-12-34 37-79 30-110 12Z" fill="#DCB78A"/><path d="M222 313c19 0 32 7 41 15m104 0c12-9 29-16 47-15" stroke="#E9C99F" stroke-width="3"/>
+<path d="m297 359-19 106h38" stroke="#292821" stroke-width="6" stroke-linecap="round"/>
+<path d="M219 535c56 26 115 29 177-4" stroke="#211F1B" stroke-width="5" stroke-linecap="round"/><path d="M219 539c60 45 124 45 178-9" stroke="#E5C299" stroke-width="2" opacity=".75"/>
+<path d="m231 83-28-52m196 67 41-54M85 248l-54-15m511 59 54 9M95 550l-39 39m458-48 59 47M296 693l-8 71" stroke="#CFB087" opacity=".37" stroke-width="1.5"/>
+<path d="M310 75c-98 1-185 82-182 179l-18 147c0 85 57 167 121 224l55 48c14 12 35 12 49 0l55-48c57-49 120-136 122-222l5-151C508 145 425 56 310 75Z" stroke="#E2C398" opacity=".66" stroke-width="2"/>
+<path d="M306 75v602" stroke="#E6C99F" opacity=".43" stroke-width="1" stroke-dasharray="4 8"/>
+</svg>
